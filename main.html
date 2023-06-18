@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <header role="heading" aria-level="1">
+    <h1>My Portfolio</h1>
+  </header>
 
+  <nav role="navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="Profile Picture" role="img" aria-label="Profile Picture">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul role="list">
+        <li role="listitem">Project 1</li>
+        <li role="listitem">Project 2</li>
+        <li role="listitem">Project 3</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio</p>
+  </footer>
 </body>
-
 </html>
